@@ -33,17 +33,10 @@ public class Movie extends javax.swing.JPanel {
        //this.setBorder(bordejpanel); 
       // this.setSize(200, 200);      
        String url ="UcuFilms\\"+etiqueta+".jpg"; 
-       
        ImageIcon imgThisImg = new ImageIcon(url);
-
-        jLabel4.setIcon(imgThisImg);
-       
         //this.add(label);
     //this.pack();
         //this.setVisible(true);
-       
-       
-       
         jButton1.setText(pel.getNombre());
        // jButton1.setSize(20, 5);
         
@@ -51,6 +44,11 @@ public class Movie extends javax.swing.JPanel {
         String año = String.valueOf(pel.getAño());
         jLabel1.setText(puntaje);
         jLabel2.setText(año); 
+        jLabel4.setIcon(imgThisImg);
+        /*ImageIcon fot = new ImageIcon(path_ala_imagen);
+Icon icono = new ImageIcon(fot.getImage().getScaledInstance(jLabel1.getWidth(), jLabel1.getHeight(), Image.SCALE_DEFAULT));
+jLabel1.setIcon(icono);
+this.repaint();/*
         
         
     }
