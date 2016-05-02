@@ -66,7 +66,9 @@ public class NewOkCancelDialog extends javax.swing.JDialog {
         okButton = new javax.swing.JButton();
         cancelButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
+        setPreferredSize(new java.awt.Dimension(429, 400));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 closeDialog(evt);
@@ -90,19 +92,27 @@ public class NewOkCancelDialog extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
         jLabel1.setText("No se pudieron extraer resultados. Nombre Ivalido");
 
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\nplaceres\\Documents\\GitHub\\UcuFilms\\advertencia.jpg")); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(330, Short.MAX_VALUE)
-                .addComponent(okButton, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cancelButton)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(okButton, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cancelButton))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addComponent(jLabel1)
+                        .addGap(0, 70, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(62, 62, 62)
-                .addComponent(jLabel1)
+                .addGap(77, 77, 77)
+                .addComponent(jLabel3)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -111,9 +121,11 @@ public class NewOkCancelDialog extends javax.swing.JDialog {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(81, Short.MAX_VALUE)
+                .addGap(25, 25, 25)
                 .addComponent(jLabel1)
-                .addGap(59, 59, 59)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(cancelButton)
                     .addComponent(okButton))
@@ -191,6 +203,7 @@ public class NewOkCancelDialog extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton cancelButton;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton okButton;
     // End of variables declaration//GEN-END:variables
 

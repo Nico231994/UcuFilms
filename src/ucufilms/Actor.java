@@ -13,7 +13,7 @@ public class Actor implements IActor {
     
     private Comparable id;
     private String nombre;
-    private IGenero siguiente = null;
+    private IActor siguiente = null;
     
     public Actor(Comparable i, String n) {
         this.id = i;
@@ -36,7 +36,7 @@ public class Actor implements IActor {
     
     @Override
     public void setSiguiente(INodo nodo) {
-        this.siguiente = (IGenero) nodo;
+        this.siguiente = (IActor) nodo;
     }
 
     @Override

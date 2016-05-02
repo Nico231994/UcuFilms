@@ -9,6 +9,6 @@ package ucufilms;
  *
  * @author nplaceres
  */
-public interface IGenero {
+public interface IGenero extends INodo{
     
 }
