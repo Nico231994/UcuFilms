@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
@@ -31,8 +32,18 @@ public class Movie extends javax.swing.JPanel {
         //Border bordejpanel = new TitledBorder(new EtchedBorder(), pel.getNombre());
        //this.setBorder(bordejpanel); 
       // this.setSize(200, 200);      
-       String url ="ucufilms/"+etiqueta+".jpg";
-       System.out.println(url);    
+       String url ="UcuFilms\\"+etiqueta+".jpg"; 
+       
+       ImageIcon imgThisImg = new ImageIcon(url);
+
+        jLabel4.setIcon(imgThisImg);
+       
+        //this.add(label);
+    //this.pack();
+        //this.setVisible(true);
+       
+       
+       
         jButton1.setText(pel.getNombre());
        // jButton1.setSize(20, 5);
         
@@ -40,6 +51,7 @@ public class Movie extends javax.swing.JPanel {
         String año = String.valueOf(pel.getAño());
         jLabel1.setText(puntaje);
         jLabel2.setText(año); 
+        
         
     }
 
